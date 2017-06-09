@@ -169,13 +169,17 @@ Click on the Mobile App Backend (HelloXamarinBackend)
  
 Exercise 3: Create your first Xamarin.Forms App and Use Azure Mobile Apps SDK 
 01.	Open Visual Studio and Click on New Project 
+<img src="images/42.jpg"/>
   
  
 02.	Click on Cross-Platform -> CrossPlatform App (Xamarin.forms or Native) then write a name for your project and click OK 
-  
+<img src="images/43.bmp"/>
+
 03.	Select xamarin.forms and select Portable Class Library
+<img src="images/44.bmp"/>
  
 04.	Open MainPage.xaml file 
+<img src="images/45.bmp"/>
   
 05. Copy the following code in MainPage.xaml Between the 
 ```html 
@@ -187,10 +191,13 @@ Exercise 3: Create your first Xamarin.Forms App and Use Azure Mobile Apps SDK
  ```
 06.	Run the solution, you should be able to see the following. (Make sure that you have your 
 Visual Studio Emulator for Android is up and running) 
+<img src="images/46.jpg"/>
   
 07. Right Click on the project -> Add -> Class 
+<img src="images/47.jpg"/>
   
 08.	Write a name for your class then click Add 
+<img src="images/48.jpg"/>
   
 09.	Add the following code to your recently added class file            
 
@@ -210,47 +217,49 @@ Visual Studio Emulator for Android is up and running)
 ```
  
 15. Click on Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution… 
+<img src="images/49.jpg"/>
   
 16. Click on Browse, write “azure mobile” in the search box, scroll till you find 
 “Microsoft.Azure.Mobile.Client”, click on it then select all your project then click Install 
+<img src="images/50.bmp"/>
 
   
  
  
  
 17.	Click OK then Accept to start installing the package 
+<img src="images/51.jpg"/>
   
 18.	Wait till the package is successfully installed 
+<img src="images/52.jpg"/>
   
 19.	Go back to MainPage.xaml.cs hover with mouse on MobileServiceClient, click on the lamp then using Microsoft.WindowsAzureMobileServices; 
+<img src="images/53.bmp"/>
   
- 
-
-
-
-
- 
- 
- 
 21.	Add the following method if you haven’t added it 
+```
     Private async void Button_Clicked(object sender, EventArgs e)
-{ 
+    { 
  
             User newUser = new User(); 
             newUser.Name= Name.Text; 
             newUser.University =University.Text; 
  
             await MobileService.GetTable<User>().InsertAsync(newUser);    
-      } 
+    }
+``` 
 22.	If you are running an android application add this code in MainActivity.cs & if iOS add it to appdelegate.cs
- CurrentPlatform.Init();
-
+``` 
+CurrentPlatform.Init();
+```
 23.	Run the solution, write your name and your university then click Insert 
+    
+<img src="images/54.jpg"/>
+ 
+24. Go back to your Azure portal and from your Azure Mobile App, click on Easy tables then click on table User 
+<img src="images/55.jpg"/>
   
  
- 
-23.Go back to your Azure portal and from your Azure Mobile App, click on Easy tables then click on table User 
+25. You should be able to see the record you just inserted in step 23 
   
- 
-24. You should be able to see the record you just inserted in step 22 
-  
+<img src="images/56.jpg"/>
