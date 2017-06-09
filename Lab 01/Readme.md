@@ -56,7 +56,7 @@ Estimated Time to finish this lab is from **60 minutes**
 12)	Wait till you receive a notification saying “Deployments succeeded” 
 <img src="images/11.jpg"/>
   
-## Exercise 2: Create an Azure Mobile App Backend 
+## Exercise 2: Create SQL Azure and Add it as Data Connection  
 1)	Click on +New then Databases 
 <img src="images/12.jpg"/>
   
@@ -97,7 +97,7 @@ Click on the Mobile App Backend (HelloXamarinBackend)
 <img src="images/21.jpg"/>
   
  
-11)Scroll down and click on Data Connections 
+11) Scroll down and click on Data Connections 
 <img src="images/22.jpg"/>
  
 12) Click on Add 
@@ -105,7 +105,7 @@ Click on the Mobile App Backend (HelloXamarinBackend)
  
  
  
-13)Select SQL Database as your data connection type then click on Configure required settings 
+13) Select SQL Database as your data connection type then click on Configure required settings 
   
 <img src="images/24.jpg"/>
  
@@ -167,7 +167,7 @@ Click on the Mobile App Backend (HelloXamarinBackend)
 30)	You should receive 2 notifications when you add 2 columns 
 <img src="images/41.jpg"/>
  
-Exercise 3: Create your first Xamarin.Forms App and Use Azure Mobile Apps SDK 
+## Exercise 3: Create your first Xamarin.Forms App and Use Azure Mobile Apps SDK 
 01.	Open Visual Studio and Click on New Project 
 <img src="images/42.jpg"/>
   
