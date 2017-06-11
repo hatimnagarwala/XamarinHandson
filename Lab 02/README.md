@@ -21,7 +21,7 @@ Estimated Time to finish this lab is from 30 minutes
   <img src="images/1.jpg"/>
  
 2)	Click on Browse, write “sqlite azure” in the search box, scroll till you find 
-“Microsoft.Azure.Mobile.Client.SQLiteStore”, click on it then select your project then click Install 
+“Microsoft.Azure.Mobile.Client.SQLiteStore”, click on it then select your project then click Install ((Please note due to some nuget issues currently the stable version 4.0.0.0 doesnt work so install the 3.1 version))
   <img src="images/2.jpg"/>
   
  
@@ -49,12 +49,15 @@ using System.Threading.Tasks; using Microsoft.WindowsAzure.MobileServices.SQLite
  
      
 4) Add the following method in MainPage.xaml.cs 
-```private async Task<bool> InitLocalStoreAsync() 
+```
+private async Task<bool> InitLocalStoreAsync() 
 { 
     if (!MobileService.SyncContext.IsInitialized) 
     { 
-       var store = new MobileServiceSQLiteStore("localstore.db");        store.DefineTable<User>(); 
-       await MobileService.SyncContext.InitializeAsync(store);        return true;  
+       var store = new MobileServiceSQLiteStore("localstore.db");        
+       store.DefineTable<User>(); 
+       await MobileService.SyncContext.InitializeAsync(store);     
+       return true;  
     } 
     return false; 
 } 

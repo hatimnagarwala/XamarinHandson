@@ -220,7 +220,7 @@ Visual Studio Emulator for Android is up and running)
 <img src="images/49.jpg"/>
   
 16. Click on Browse, write “azure mobile” in the search box, scroll till you find 
-“Microsoft.Azure.Mobile.Client”, click on it then select all your project then click Install 
+“Microsoft.Azure.Mobile.Client”, click on it then select all your project then click Install. (Please note due to some nuget issues currently the stable version 4.0.0.0 doesnt work so install the 3.1 version)
 <img src="images/50.bmp"/>
 
   
